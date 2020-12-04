@@ -6,7 +6,7 @@
 - Retrieve all comments for each post
 - MySQL DB 
 ## Postman Collection
-[example collection](https://www.getpostman.com/collections/e6e9957464334ea4012f).
+[https://www.getpostman.com/collections/e6e9957464334ea4012f](https://www.getpostman.com/collections/e6e9957464334ea4012f).
 
 ## Installation
 
