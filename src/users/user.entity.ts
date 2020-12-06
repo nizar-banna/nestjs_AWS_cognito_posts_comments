@@ -6,14 +6,11 @@ export class Users {
   @PrimaryGeneratedColumn()
   id: number;
 
-  // @Column()
-  // cognitoId: string;
+  @Column()
+  cognitoId: string;
 
   @Column()
   userName: string;
-
-  @Column()
-  userConfirmed: boolean;
 
   @Column({ name: 'created_at', default: () => `now()`, nullable: false })
   createdAt: Date;

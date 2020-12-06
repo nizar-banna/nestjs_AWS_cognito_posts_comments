@@ -42,9 +42,7 @@ export class AuthService {
           } else {
             const createUser = new Users();
             createUser.userName = result.user.getUsername();
-            createUser.userConfirmed = result.userConfirmed;
-            console.log({ createUser });
-            console.log(result.user, 'result.user');
+            createUser.cognitoId = result.userSub;
             await this.usersService.create(createUser);
             return resolve({ statusCode: 201, response: result.user });
           }
